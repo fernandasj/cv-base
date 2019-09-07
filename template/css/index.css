@@ -38,14 +38,16 @@
 	header{
 		width: 100%;
 		height: 100vh;
-		background: url('https://3kllhk1ibq34qk6sp3bhtox1-wpengine.netdna-ssl.com/wp-content/uploads/marketplace-designer_inarticle.png') no-repeat center center;
-		background-size: cover;
 		/*background: linear-gradient(#503eff, #08d4fd);*/
 	   /* background: linear-gradient(0deg, #08d4fd 0%, #503eff 100%);*/
 		/*background: linear-gradient(#e66465, #9198e5);*/
 		position: relative;
 		color: #ffffff;
 		overflow: hidden;
+	}
+	header.bg {
+		background: url('https://3kllhk1ibq34qk6sp3bhtox1-wpengine.netdna-ssl.com/wp-content/uploads/marketplace-designer_inarticle.png') no-repeat center center;
+		background-size: cover;
 	}
 	.overlay{position:absolute;background-color:#212529;height:100%;width:100%;top:0;left:0;opacity:.3}
 	header .tophead{

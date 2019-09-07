@@ -604,6 +604,11 @@ textarea.form-control {
   background-image: url("../images/bg.jpg");
   /* background-image: url("https://devillers.nl/images/slide-01.jpg") */
 }
+
+/* header{
+  background: url('https://i.l.inmobicdn.net/website/website/6.0.1/v5/img/careers.png') no-repeat center center;
+  background-size: cover;
+/* } */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), not all, only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .header-logo {
       /* background-image: url("https://i.ibb.co/51dw7mf/pyrocode-logo.png"); */
@@ -616,7 +621,7 @@ textarea.form-control {
   }
 }
 
-.navbar-toggle {
+/* .navbar-toggle {
   z-index: 999999;
 }
 @media (max-width: 768px) {
@@ -756,7 +761,7 @@ textarea.form-control {
   .intro-navbar ul li:last-child {
     display: none;
   }
-}
+} */
 
 .mask {
   width: 100%;
@@ -774,7 +779,7 @@ textarea.form-control {
   padding-top: 74px;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/bg.jpg");
+  background-image: url("https://static.swissdevjobs.ch/pictures/software-developer-interview.svg");
   background-size: cover !important;
   background-position: 0 50% !important;
 }
