@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>CV Base</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" href="./css/careers.css" type="text/css"/>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="./css/careers.css" type="text/css" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="./css/nav-bar.css">
+	<style>
 
-<style>
-
-</style>
+	</style>
 </head>
+
 <body class="center">
 
+	<div class="overlay"></div>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark mybg-dark navbar-shrink">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="javascript:void(0)">
+				<h3 class="my-heading ">Pyrocode</h3>
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="fa fa-bars mfa-white"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="text nav-link" href="./index.html#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="text nav-link" href="./index.html#overview">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a class="text nav-link" href="./index.html#team">Equipe</a>
+					</li>
+					<li class="nav-item">
+						<a class="text nav-link" href="./careers.html">Vagas</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a href="#" class="btn-explore">Administrativo</a>
+					</li> -->
+				</ul>
+
+			</div>
+
+		</div>
+	</nav>
 	<section class="intro">
 		<header class="container">
 			<div class="headline">
@@ -44,22 +80,26 @@
 	<section class="career">
 		<div class="container">
 			<div class="highlight">
-			<div class="title row">
-				<div class="col-md-5">
-				<h3>As pessoas são significativas</h3>
-				<h2>
-					<img width="100%" src="./images/bg-new.png" alt="">
-				</h2>
+				<div class="title row">
+					<div class="col-md-5">
+						<h3>As pessoas são significativas</h3>
+						<h2>
+							<img width="100%" src="./images/bg-new.png" alt="">
+						</h2>
+					</div>
+					<div class="col-md-offset-1 col-md-6">
+						<p>Acreditamos que as pessoas são a variável mais importante na engenharia de software. Nossa
+							cultura é horizontal e focada no auto-aperfeiçoamento, com comunicação aberta no centro de
+							nosso processo.</p>
+						<p>Quer trabalhar com pessoas incríveis, e criar produtos de ponta para as melhores empresas e
+							ainda contribuir para as comunidades de código aberto? Então a <b>Pyrocode</b> é o lugar
+							perfeito para você!</p>
+					</div>
 				</div>
-				<div class="col-md-offset-1 col-md-6">
-				<p>Acreditamos que as pessoas são a variável mais importante na engenharia de software. Nossa cultura é horizontal e focada no auto-aperfeiçoamento, com comunicação aberta no centro de nosso processo.</p>		
-				<p>Quer trabalhar com pessoas incríveis, e criar produtos de ponta para as melhores empresas e ainda contribuir para as comunidades de código aberto? Então a <b>Pyrocode</b> é o lugar perfeito para você!</p>
-				</div>
-			</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="career">
 		<div class="container">
 			<h3>Vagas abertas</h3>
@@ -68,136 +108,143 @@
 		<div class="limiter">
 			<div class="container-login100">
 				<div class="wrap-login100 p-t-50 p-b-90 ">
-						<section class="details-card">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="card-content">
-											<div class="card-img">
-												<img src="./images/developer.jpg" alt="">
-											</div>
-											<div class="card-desc">
-												<span>
-													<h3 style="color: #827ffe">Developer</h3>
-												</span>
-												<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-													voluptas totam</p>
-													<a href="#" class="btn-card">Mais informações</a>   
-											</div>
+					<section class="details-card">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card-content">
+										<div class="card-img">
+											<img src="./images/developer.jpg" alt="">
+										</div>
+										<div class="card-desc">
+											<span>
+												<h3 style="color: #827ffe">Developer</h3>
+											</span>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+												voluptatum! Dolor quo, perspiciatis
+												voluptas totam</p>
+											<a href="#" class="btn-card">Mais informações</a>
 										</div>
 									</div>
-									<div class="col-md-4">
-										<div class="card-content">
-											<div class="card-img">
-												<img src="./images/marketing.jpg" alt="">
-											</div>
-											<div class="card-desc">
-												<span>
-													<h3 style="color: #827ffe">Marketing</h3>
-												</span>
-												<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-													voluptas totam</p>
-													<a href="#" class="btn-card">Mais informações</a>   
-											</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card-content">
+										<div class="card-img">
+											<img src="./images/marketing.jpg" alt="">
+										</div>
+										<div class="card-desc">
+											<span>
+												<h3 style="color: #827ffe">Marketing</h3>
+											</span>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+												voluptatum! Dolor quo, perspiciatis
+												voluptas totam</p>
+											<a href="#" class="btn-card">Mais informações</a>
 										</div>
 									</div>
-									<div class="col-md-4">
-										<div class="card-content">
-											<div class="card-img">
-												<img src="./images/ux-design.jpg" alt="">
-											</div>
-											<div class="card-desc">
-												<span>
-													<h3 style="color: #827ffe">UX Designer</h3>
-												</span>
-												<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-													voluptas totam</p>
-													<a href="#" class="btn-card">Mais informações</a>   
-											</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card-content">
+										<div class="card-img">
+											<img src="./images/ux-design.jpg" alt="">
+										</div>
+										<div class="card-desc">
+											<span>
+												<h3 style="color: #827ffe">UX Designer</h3>
+											</span>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+												voluptatum! Dolor quo, perspiciatis
+												voluptas totam</p>
+											<a href="#" class="btn-card">Mais informações</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</section>
+						</div>
+					</section>
 
-						<section class="details-card">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="card-content">
-											<div class="card-img">
-												<img src="./images/project-manager.jpg" alt="">
-											</div>
-											<div class="card-desc">
-												<span>
-													<h3 style="color: #827ffe">Gerente de Projetos</h3>
-												</span>
-												<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-													voluptas totam</p>
-													<a href="#" class="btn-card">Mais informações</a>   
-											</div>
+					<section class="details-card">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card-content">
+										<div class="card-img">
+											<img src="./images/project-manager.jpg" alt="">
+										</div>
+										<div class="card-desc">
+											<span>
+												<h3 style="color: #827ffe">Gerente de Projetos</h3>
+											</span>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+												voluptatum! Dolor quo, perspiciatis
+												voluptas totam</p>
+											<a href="#" class="btn-card">Mais informações</a>
 										</div>
 									</div>
-									<div class="col-md-4">
-										<div class="card-content">
-											<div class="card-img">
-												<img src="./images/design.jpg" alt="">
-											</div>
-											<div class="card-desc">
-												<span>
-													<h3 style="color: #827ffe">Designer</h3>
-												</span>
-												<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-													voluptas totam</p>
-													<a href="#" class="btn-card">Mais informações</a>   
-											</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card-content">
+										<div class="card-img">
+											<img src="./images/design.jpg" alt="">
+										</div>
+										<div class="card-desc">
+											<span>
+												<h3 style="color: #827ffe">Designer</h3>
+											</span>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+												voluptatum! Dolor quo, perspiciatis
+												voluptas totam</p>
+											<a href="#" class="btn-card">Mais informações</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</section>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>
-	</section>	
+	</section>
 
 	<div id="dropDownSelect1"></div>
-	
+
 	<footer role="banner">
 		<div class="container">
 			<div class="final-footer text-center">
-			<div class="col-xs-12">
-				<img style="-webkit-filter: grayscale(100%);" width="150px" src="./images/pyrocode-logo.png" alt="">
-				<!-- <span class="logo-footer"></span> -->
-			</div>
-			<div class="col-xs-12">
-				<p>
-				© <span id="footer-year">2019</span> Pyrocode Software -
-				</p>
-				<p>Entre em contato conosco em: <a href="mailto:contact.pyrocode@gmail.com"><u>contact.pyrocode@gmail.com</u></a></p>
-			</div>
+				<div class="col-xs-12">
+					<img style="-webkit-filter: grayscale(100%);" width="150px" src="./images/pyrocode-logo.png" alt="">
+					<!-- <span class="logo-footer"></span> -->
+				</div>
+				<div class="col-xs-12">
+					<p>
+						© <span id="footer-year">2019</span> Pyrocode Software -
+					</p>
+					<p>Entre em contato conosco em: <a
+							href="mailto:contact.pyrocode@gmail.com"><u>contact.pyrocode@gmail.com</u></a></p>
+				</div>
 			</div>
 		</div>
 	</footer>
 
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
+
 </html>
