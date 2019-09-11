@@ -10,11 +10,11 @@ services:
       - POSTGRES_USER
       - POSTGRES_PASSWORD
 
-  web:
+  app:
     build: .
-    image: ${PROJECT}/web
+    image: ${PROJECT}/app
     restart: always
-    container_name: ${PROJECT}-web
+    container_name: ${PROJECT}-app
     environment:
       - DATABASE_URL
       - SECRET_KEY

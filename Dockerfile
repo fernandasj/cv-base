@@ -5,8 +5,8 @@ WORKDIR /usr/src/app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-COPY requirements/ .
-COPY requirements.txt .
+COPY requirements.txt ./
+COPY requirements requirements/
 
 RUN apk update \
     && apk add --no-cache --virtual .build-deps \
