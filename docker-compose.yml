@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:11.5-alpine
+    restart: always
+    container_name: ${PROJECT}-db
+    environment:
+      - POSTGRES_DB
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+
+  app:
+    build: .
+    image: ${PROJECT}/app
+    restart: always
+    container_name: ${PROJECT}-app
+    environment:
+      - DATABASE_URL
+      - SECRET_KEY
+    volumes:
+      - .:/usr/src/${PROJECT}
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+networks:
+  default:
+    name: ${PROJECT}-network
