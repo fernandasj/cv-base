@@ -16,8 +16,7 @@
         <a class="navbar-brand" href="javascript:void(0)">
           <h3 class="my-heading">
             <div class="col-xs-12">
-              <img style="-webkit-filter: grayscale(100%);" width="150px" src="./images/pyrocode-logo.png" alt="">
-              <!-- <span class="logo-footer"></span> -->
+              <img style="-webkit-filter: grayscale(100%);" width="150px" src="{% static 'images/pyrocode-logo.png' %}" alt="">
             </div>
           </h3>
         </a>
@@ -32,21 +31,19 @@
               <a class="text nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="text nav-link" href="#overview">Sobre</a>
+              <a class="text nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="text nav-link" href="#team">Equipe</a>
+              <a class="text nav-link" href="#equipe">Equipe</a>
             </li>
             <li class="nav-item">
-              <a class="text nav-link" href="/carreiras/">Vagas</a>
+              <a class="text nav-link" href="/carreiras">Vagas</a>
             </li>
             <li class="nav-item">
               <a href="#" class="btn-explore">Administrativo</a>
             </li>
           </ul>
-
         </div>
-
       </div>
     </nav>
     <div class="tophead">
@@ -68,8 +65,9 @@
     </div>
     <div class="sesgoabajo"></div>
   </header>
+
   <main>
-    <section class="overview-wrap" id="overview">
+    <section class="overview-wrap" id="sobre">
       <div class="container">
         <div class="contenedor">
           <h2 class="title-overview wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Sobre</h2>
@@ -80,14 +78,14 @@
           </p>
 
           <p class="subtitle-overview wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <b>Algumas tecnologias com as quais trabalhamos</b>
+            <b>Algumas tecnologias com as quais trabalhamos:</b>
           </p>
           <div class="row">
 
             <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s"
               style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
               <div class="overview-box mx-auto">
-                <img width="50%" src="./images//technologies/django.png">
+                <img width="50%" src="{% static 'images//technologies/django.png' %}">
                 <h5>Django</h5>
                 <p class=" mb-0">um framework para aplicações web, de código aberto e gratuito, escrito em Python.!</p>
               </div>
@@ -95,7 +93,7 @@
             <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s"
               style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
               <div class="overview-box mx-auto">
-                <img width="20%" src="./images//technologies/vue.png">
+                <img width="20%" src="{% static 'images/technologies/vue.png' %}">
                 <h5>Vue</h5>
                 <p class=" mb-0">framework JavaScript de código aberto, utilizando para construir interfaces e
                   aplicações de página unica.</p>
@@ -104,10 +102,18 @@
             <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s"
               style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
               <div class="overview-box mx-auto">
-                <img width="65%" src="./images//technologies/python.svg">
+                <img width="65%" src="{% static 'images/technologies/python.svg' %}">
                 <h5>Python</h5>
                 <p class=" mb-0">é uma linguagem de programação de alto nível, orientada a objetos, funcional, de
                   tipagem dinâmica e forte.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s"
+              style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+              <div class="overview-box mx-auto">
+                <img width="33%" src="{% static 'images/technologies/nodejs.png' %}">
+                <h5>Node</h5>
+                <p class=" mb-0">é um ambiente de tempo de execução JavaScript de plataforma aberta, que executa o código JS fora de um navegador.</p>
               </div>
             </div>
           </div>
@@ -118,18 +124,17 @@
       <div class="sesgoarriba"></div>
       <div class="imagenes">
         <img
-          src="https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+          src="{% static 'images/index-image-02.jpeg' %}"
           alt="" class="img-fluid">
         <div class="enmica">
           <div></div>
         </div>
       </div>
-
       <div class="sesgoabajo"></div>
     </section>
 
     <!--Our Team-->
-    <section class="our-team" id="team">
+    <section class="our-team" id="equipe">
       <div class="container">
         <h2 class="title-our-team wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Nossa Equipe</h2>
         <p class="subtitle-our-team wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Saiba mais
@@ -144,49 +149,39 @@
           <li class="col-12 col-md-6 col-lg-3 wow fadeInLeft" data-wow-duration="1.4s"
             style="visibility: visible; animation-duration: 1.4s; animation-name: fadeInLeft;">
             <div class="mycard-block equal-hight">
-              <figure><img src="./images/team/02-rogerio.jpg" class="img-fluid" alt=""></figure>
+              <figure><img src="{% static 'images/team/02-rogerio.jpg' %}" class="img-fluid" alt=""></figure>
               <h3><a href="javascript:void(0)">Rogério Araújo</a></h3>
               <p>Frontend/Backend</p>
-              <ul class="follow-us clearfix">
-                <li><a href="#" class="btn btn-circle my-social-btn fb"><i class="fa fa-facebook "></i></a></li>
-                <li><a href="#" class="btn btn-circle my-social-btn twitter"><i class="fa fa-twitter "></i></a></li>
-                <li><a href="#" class="btn btn-circle my-social-btn google"><i class="fa fa-linkedin "></i></a></li>
-              </ul>
             </div>
           </li>
           <li class="col-12 col-md-6 col-lg-3 wow fadeInLeft" data-wow-duration="1.4s"
             style="visibility: visible; animation-duration: 1.4s; animation-name: fadeInLeft;">
             <div class="mycard-block equal-hight">
-              <figure><img src="./images/team/01-fernanda.jpg" class="img-fluid" alt=""></figure>
+              <figure><img src="{% static 'images/team/01-fernanda.jpg' %}" class="img-fluid" alt=""></figure>
               <h3><a href="javascript:void(0)">Fernanda Vieira</a></h3>
-              <p>Backend</p>
-              <ul class="follow-us clearfix">
-                <li><a href="#" class="btn btn-circle my-social-btn fb"><i class="fa fa-facebook "></i></a></li>
-                <li><a href="#" class="btn btn-circle my-social-btn twitter"><i class="fa fa-twitter "></i></a></li>
-                <li><a href="#" class="btn btn-circle my-social-btn google"><i class="fa fa-linkedin "></i></a></li>
-              </ul>
+              <p>Frontend/Backend</p>
             </div>
           </li>
           <li class="col-12 col-md-6 col-lg-3 wow fadeInLeft" data-wow-duration="1.4s"
             style="visibility: visible; animation-duration: 1.4s; animation-name: fadeInLeft;">
             <div class="mycard-block equal-hight">
-              <figure><img src="./images/team/03-junio.jpg" class="img-fluid" alt=""></figure>
+              <figure><img src="{% static 'images/team/03-junio.jpg' %}" class="img-fluid" alt=""></figure>
               <h3><a href="javascript:void(0)">Junio Matias</a></h3>
-              <p>UX Design</p>
-              <ul class="follow-us clearfix">
-                <li><a href="#" class="btn btn-circle my-social-btn fb"><i class="fa fa-facebook "></i></a></li>
-                <li><a href="#" class="btn btn-circle my-social-btn twitter"><i class="fa fa-twitter "></i></a></li>
-                <li><a href="#" class="btn btn-circle my-social-btn google"><i class="fa fa-linkedin "></i></a></li>
-              </ul>
+              <p>UX/Web Design</p>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-3 wow fadeInLeft" data-wow-duration="1.4s"
+            style="visibility: visible; animation-duration: 1.4s; animation-name: fadeInLeft;">
+            <div class="mycard-block equal-hight">
+              <figure><img src="{% static 'images/team/04-aguirre.jpg' %}" class="img-fluid" alt=""></figure>
+              <h3><a href="javascript:void(0)">Aguirre Sabino</a></h3>
+              <p>Backend</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
   </main>
-
-
-
   <footer class="footer bg-dark">
     <div class="container">
       <div class="row">
@@ -196,8 +191,6 @@
       </div>
     </div>
   </footer>
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
     new WOW().init();

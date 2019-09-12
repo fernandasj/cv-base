@@ -1,7 +1,12 @@
+{% load static %}
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark mybg-dark navbar-shrink">
   <div class="container-fluid">
     <a class="navbar-brand" href="javascript:void(0)">
-      <h3 class="my-heading ">pyrocode</h3>
+      <h3 class="my-heading">
+        <div class="col-xs-12">
+          <img style="-webkit-filter: grayscale(100%);" width="150px" src="{% static 'images/pyrocode-logo.png' %}" alt="">
+        </div>
+      </h3>
     </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
       data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -11,18 +16,35 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="text nav-link" href="#home">Home</a>
+          <a class="text nav-link" href="/#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="text nav-link" href="#overview">Sobre</a>
+          <a class="text nav-link" href="/#sobre">Sobre</a>
         </li>
         <li class="nav-item">
-          <a class="text nav-link" href="#team">Equipe</a>
+          <a class="text nav-link" href="/#equipe">Equipe</a>
         </li>
         <li class="nav-item">
-          <a class="text nav-link" href="/vagas">Vagas</a>
+          <a class="text nav-link" href="/carreiras">Vagas</a>
+        </li>
+        <li class="nav-item">
+          <a style="display: inline-block;
+            padding: 8px 20px;
+            /*width: 128px;*/
+            font-size: 14px;
+            background: #6F00E0;
+            border: 1px solid#6F00E0;
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 3px;
+            cursor:pointer;
+            box-shadow: 0px 0px 10px 0px #00000059;" href="#" class="btn-explore">Administrativo</a>
         </li>
       </ul>
+
     </div>
+
   </div>
 </nav>
