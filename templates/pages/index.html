@@ -1,11 +1,9 @@
-{% load static %} 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
-    id="bootstrap-css">
-  <link rel="stylesheet" type="text/css"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+{% load static %}   
 
   {% block style %}
+  <link rel="stylesheet" href="{% static 'css/4.0.0/bootstrap.min.css' %}" id="bootstrap-css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/4.7.0/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/3.7.0/animate.css' %}">
   <link rel="stylesheet" href="{% static 'css/index.css' %}" />
   {% endblock %}
 
