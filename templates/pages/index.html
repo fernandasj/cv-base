@@ -1,0 +1,220 @@
+{% load static %} 
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+    id="bootstrap-css">
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  {% block style %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  {% endblock %}
+
+  <header class="bg" id="home">
+    <div class="overlay"></div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark mybg-dark navbar-shrink">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <h3 class="my-heading">
+            <div class="col-xs-12">
+              <img style="-webkit-filter: grayscale(100%);" width="150px" src="./images/pyrocode-logo.png" alt="">
+              <!-- <span class="logo-footer"></span> -->
+            </div>
+          </h3>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="fa fa-bars mfa-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="text nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="text nav-link" href="#overview">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="text nav-link" href="#team">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="text nav-link" href="/carreiras/">Vagas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn-explore">Administrativo</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <div class="tophead">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7 ">
+            <h2 class="wow fadeInLeft" data-wow-duration="1.5s"
+              style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;">
+              Crie de forma inteligente, aventure-se além.
+            </h2>
+            <h1 class="subtitle-main wow fadeInUp" data-wow-duration="1.1s"
+              style="visibility: visible; animation-duration: 1.1s; animation-name: fadeInUp;">
+              Na Pyrocode, estabelecemos parcerias de longo prazo para desenvolver produtos digitais e inovadores para
+              sua empresa.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sesgoabajo"></div>
+  </header>
+  <main>
+    <section class="overview-wrap" id="overview">
+      <div class="container">
+        <div class="contenedor">
+          <h2 class="title-overview wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Sobre</h2>
+          <p class="subtitle-overview wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            Pyrocode é uma empresa de software focada em projetos web. Gostamos de trabalhar com ferramentas Python e
+            JavaScript, mas temos uma mente aberta para experimentar e brincar com outras linguagens e ferramentas.
+            Django e Vue são nossas especialidades e adoramos trabalhar com APIs.
+          </p>
+
+          <p class="subtitle-overview wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <b>Algumas tecnologias com as quais trabalhamos</b>
+          </p>
+          <div class="row">
+
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s"
+              style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+              <div class="overview-box mx-auto">
+                <img width="50%" src="./images//technologies/django.png">
+                <h5>Django</h5>
+                <p class=" mb-0">um framework para aplicações web, de código aberto e gratuito, escrito em Python.!</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s"
+              style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+              <div class="overview-box mx-auto">
+                <img width="20%" src="./images//technologies/vue.png">
+                <h5>Vue</h5>
+                <p class=" mb-0">framework JavaScript de código aberto, utilizando para construir interfaces e
+                  aplicações de página unica.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s"
+              style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+              <div class="overview-box mx-auto">
+                <img width="65%" src="./images//technologies/python.svg">
+                <h5>Python</h5>
+                <p class=" mb-0">é uma linguagem de programação de alto nível, orientada a objetos, funcional, de
+                  tipagem dinâmica e forte.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="galeria">
+      <div class="sesgoarriba"></div>
+      <div class="imagenes">
+        <img
+          src="https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
+          alt="" class="img-fluid">
+        <div class="enmica">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="sesgoabajo"></div>
+    </section>
+
+    <!--Our Team-->
+    <section class="our-team" id="team">
+      <div class="container">
+        <h2 class="title-our-team wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Nossa Equipe</h2>
+        <p class="subtitle-our-team wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Saiba mais
+          sobre nós</p>
+        <p class="subtitle-our-team wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+          Somos especialistas em software e adoramos trabalhar com o Django, Vue, Python e as novas ferramentas
+          disponíveis. Aderimos aos princípios ágeis, como Scrum. Então relaxe, seu software está em boas mãos porque
+          sabemos que "Bonito é melhor que feio" e "Simples é melhor que complexo".
+        </p>
+
+        <ul class="row">
+          <li class="col-12 col-md-6 col-lg-3 wow fadeInLeft" data-wow-duration="1.4s"
+            style="visibility: visible; animation-duration: 1.4s; animation-name: fadeInLeft;">
+            <div class="mycard-block equal-hight">
+              <figure><img src="./images/team/02-rogerio.jpg" class="img-fluid" alt=""></figure>
+              <h3><a href="javascript:void(0)">Rogério Araújo</a></h3>
+              <p>Frontend/Backend</p>
+              <ul class="follow-us clearfix">
+                <li><a href="#" class="btn btn-circle my-social-btn fb"><i class="fa fa-facebook "></i></a></li>
+                <li><a href="#" class="btn btn-circle my-social-btn twitter"><i class="fa fa-twitter "></i></a></li>
+                <li><a href="#" class="btn btn-circle my-social-btn google"><i class="fa fa-linkedin "></i></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-3 wow fadeInLeft" data-wow-duration="1.4s"
+            style="visibility: visible; animation-duration: 1.4s; animation-name: fadeInLeft;">
+            <div class="mycard-block equal-hight">
+              <figure><img src="./images/team/01-fernanda.jpg" class="img-fluid" alt=""></figure>
+              <h3><a href="javascript:void(0)">Fernanda Vieira</a></h3>
+              <p>Backend</p>
+              <ul class="follow-us clearfix">
+                <li><a href="#" class="btn btn-circle my-social-btn fb"><i class="fa fa-facebook "></i></a></li>
+                <li><a href="#" class="btn btn-circle my-social-btn twitter"><i class="fa fa-twitter "></i></a></li>
+                <li><a href="#" class="btn btn-circle my-social-btn google"><i class="fa fa-linkedin "></i></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="col-12 col-md-6 col-lg-3 wow fadeInLeft" data-wow-duration="1.4s"
+            style="visibility: visible; animation-duration: 1.4s; animation-name: fadeInLeft;">
+            <div class="mycard-block equal-hight">
+              <figure><img src="./images/team/03-junio.jpg" class="img-fluid" alt=""></figure>
+              <h3><a href="javascript:void(0)">Junio Matias</a></h3>
+              <p>UX Design</p>
+              <ul class="follow-us clearfix">
+                <li><a href="#" class="btn btn-circle my-social-btn fb"><i class="fa fa-facebook "></i></a></li>
+                <li><a href="#" class="btn btn-circle my-social-btn twitter"><i class="fa fa-twitter "></i></a></li>
+                <li><a href="#" class="btn btn-circle my-social-btn google"><i class="fa fa-linkedin "></i></a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center  my-auto ">
+          <p class="mb-4 mb-lg-0">© Pyrocode 2019. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+
+  </script>
+  <script>
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 10) {
+        $("nav.navbar").addClass("mybg-dark");
+        $("nav.navbar").addClass("navbar-shrink");
+
+      } else {
+        $("nav.navbar").removeClass("mybg-dark");
+        $("nav.navbar").removeClass("navbar-shrink");
+
+      }
+
+    });
+
+  </script>
