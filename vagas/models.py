@@ -35,6 +35,7 @@ class Beneficio(models.Model):
 
 
 class Candidatura(models.Model):
+    vaga = models.ForeignKey("Vaga", on_delete=models.CASCADE)
     nome = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
     telefone = models.CharField(max_length=255)
@@ -43,4 +44,4 @@ class Candidatura(models.Model):
     motivacao = models.TextField(max_length=500)
 
     def __str__(self):
-        return f"[{self.name}] {self.email}"
+        return f"[{self.nome}] {self.email}"
