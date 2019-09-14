@@ -8,4 +8,4 @@ def index(request):
     return render(request, "pages/index.html")
 
 def candidatura(request):
-    return render(request, "pages/index.html")
+    pass
