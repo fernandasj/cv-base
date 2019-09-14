@@ -1,0 +1,8 @@
+-r core.txt
+black==19.3b0
+docker-compose==1.24.1
+flake8==3.7.8
+flake8-bugbear==19.8.0
+flake8-commas==2.0.0
+flake8-docstrings==1.4.0
+flake8-import-order==0.18.1
