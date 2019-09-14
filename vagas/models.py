@@ -35,7 +35,20 @@ class Beneficio(models.Model):
 
 
 class Candidatura(models.Model):
-    vaga = models.ForeignKey("Vaga", on_delete=models.CASCADE)
+    DEVELOP = 'DEVELOP'
+    GERENTE_PROJETO = 'GERENTE_PROJETO'
+    MARKETING = 'MARKETING'
+    UXDESIGNER = 'UXDESIGNER'
+    DESIGNER = 'DESIGNER'
+    VAGA_CHOICES = (
+        (DEVELOP, 'Develop'),
+        (GERENTE_PROJETO, 'GerenteProjeto'),
+        (MARKETING, 'Marketing'),
+        (UXDESIGNER, 'UXDesigner'),
+        (DESIGNER, 'Designer'),
+    )
+
+    vaga = models.CharField(choices=VAGA_CHOICES, max_length=100, default=DEVELOP)
     nome = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
     telefone = models.CharField(max_length=255)
