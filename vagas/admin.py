@@ -1,5 +1,5 @@
 from django.contrib import admin
-
+# from django.contrib.auth.admin import Vaga
 from .models import Beneficio, Requisito, Vaga, Candidatura
 
 
@@ -20,4 +20,10 @@ from .models import Beneficio, Requisito, Vaga, Candidatura
 
 @admin.register(Candidatura)
 class CandidaturaAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('vaga','nome', 'email', 'telefone')
+    search_fields = ('vaga', 'nome')
+    ordering = ("vaga", "nome")
+
+    filter_horizontal = ()
+    list_filter = (['vaga'])
+    fieldsets = ()
