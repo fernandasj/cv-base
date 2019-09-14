@@ -32,3 +32,15 @@ class Beneficio(models.Model):
 
     def __str__(self):
         return f"[{self.vaga.titulo}] {self.descricao}"
+
+
+class Candidatura(models.Model):
+    nome = models.CharField(max_length=255)
+    email = models.EmailField(max_length=255)
+    telefone = models.CharField(max_length=255)
+    experiencia_profissional = models.TextField(max_length=500)
+    experiencia_academica = models.TextField(max_length=500)
+    motivacao = models.TextField(max_length=500)
+
+    def __str__(self):
+        return f"[{self.name}] {self.email}"

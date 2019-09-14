@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Beneficio, Requisito, Vaga
+from .models import Beneficio, Requisito, Vaga, Candidatura
 
 
 @admin.register(Vaga)
@@ -15,4 +15,9 @@ class RequisitoAdmin(admin.ModelAdmin):
 
 @admin.register(Beneficio)
 class BeneficioAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Candidatura)
+class CandidaturaAdmin(admin.ModelAdmin):
     pass
