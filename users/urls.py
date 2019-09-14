@@ -6,8 +6,6 @@ from django.views.generic.base import RedirectView
 
 
 urlpatterns = [
-    path("", RedirectView.as_view(url='login?next=user', permanent=False), name='index'),
-    path("dashboard", dashboard),
-    path("login", users_login)
+    path("", RedirectView.as_view(url='login?next=user', permanent=False), name='index')
 ]
 
