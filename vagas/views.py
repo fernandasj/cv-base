@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-
+# principal
 def vagas_list(request):
     return render(request, "vagas/vaga_list.html")
 
@@ -10,7 +10,7 @@ def index(request):
 def candidatura(request):
     pass
 
-# vagas páginas
+# vagas
 def developer_page(request):
     return render(request, "vagas/developer_page.html")
 
@@ -26,3 +26,7 @@ def marketing_page(request):
 def project_manager_page(request):
     return render(request, "vagas/project_manager_page.html")
 
+# candidatura
+def candidatura_page(request):
+    request.GET.get('vaga') # vaga nome
+    return render(request, "pages/candidatura_vaga.html")

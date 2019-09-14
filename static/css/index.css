@@ -72,7 +72,8 @@
 		padding: 8px 20px;
 		/*width: 128px;*/
 		font-size: 14px;
-		background: #6F00E0;
+		/* background: #6F00E0; */
+		background: rgb(147, 131, 161);
 		border: 1px solid#6F00E0;
 		color: #ffffff;
 		text-align: center;
