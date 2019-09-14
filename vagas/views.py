@@ -6,3 +6,6 @@ def vagas_list(request):
 
 def index(request):
     return render(request, "pages/index.html")
+
+def candidatura(request):
+    pass
