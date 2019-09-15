@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+from .forms import RegisterCandidatura
+from .models import Candidatura
+
 # principal
 def vagas_list(request):
     return render(request, "vagas/vaga_list.html")
@@ -28,5 +31,47 @@ def project_manager_page(request):
 
 # candidatura
 def candidatura_page(request):
-    request.GET.get('vaga') # vaga nome
+    if request.method == 'POST':
+        print("Entrou 1")
+        print(request.GET.get('vaga'))
+        form = RegisterCandidatura(request.POST)
+        # print(form)
+        print("Validando form")
+        if form.is_valid():
+            print("Form válido 2")
+            
+            candidatura = form.save(commit=False)
+
+            # vaga = request.GET.get('vaga') # vaga nome
+            # nome = request.POST['nome'] + " " + request.POST['sobrenome']
+            # email = request.POST['email']
+            # telefone = request.POST['telefone']
+            # experiencia_profissional = request.POST['experiencia_profissional']
+            # experiencia_academica = request.POST['experiencia_academica']
+            # motivacao = request.POST['motivacao']
+
+            print(candidatura)
+
+            candidatura.vaga = request.GET.get('vaga')
+            candidatura.nome = request.POST['nome'] + " " + request.POST['sobrenome']
+            candidatura.email = request.POST['email']
+            candidatura.telefone = request.POST['telefone']
+            candidatura.experiencia_profissional = request.POST['experiencia_profissional']
+            candidatura.experiencia_academica = request.POST['experiencia_academica']
+            candidatura.motivacao = request.POST['motivacao']
+            
+            print("Paasou daqui, já pode comemorar 3")
+
+            # candidatura = Candidatura.objects.create(
+            #     vaga, nome, email, telefone, experiencia_profissional, experiencia_academica, motivacao
+            # )
+
+            candidatura.save()
+            
+            print("Salvo com a força do ódio 4")
+
+            return render(request, "pages/sucesso.html")
+        else:
+            form = RegisterCandidatura()
+        
     return render(request, "pages/candidatura_vaga.html")
