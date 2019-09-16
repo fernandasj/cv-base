@@ -33,22 +33,14 @@ def project_manager_page(request):
 def candidatura_page(request):
     if request.method == 'POST':
         print("Entrou 1")
-        print(request.GET.get('vaga'))
+
         form = RegisterCandidatura(request.POST)
-        # print(form)
+    
         print("Validando form")
         if form.is_valid():
             print("Form válido 2")
             
             candidatura = form.save(commit=False)
-
-            # vaga = request.GET.get('vaga') # vaga nome
-            # nome = request.POST['nome'] + " " + request.POST['sobrenome']
-            # email = request.POST['email']
-            # telefone = request.POST['telefone']
-            # experiencia_profissional = request.POST['experiencia_profissional']
-            # experiencia_academica = request.POST['experiencia_academica']
-            # motivacao = request.POST['motivacao']
 
             print(candidatura)
 
@@ -61,10 +53,6 @@ def candidatura_page(request):
             candidatura.motivacao = request.POST['motivacao']
             
             print("Paasou daqui, já pode comemorar 3")
-
-            # candidatura = Candidatura.objects.create(
-            #     vaga, nome, email, telefone, experiencia_profissional, experiencia_academica, motivacao
-            # )
 
             candidatura.save()
             
