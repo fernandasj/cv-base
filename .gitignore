@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Visual Studio Code Project Folder
+/.vscode
+.vscode
+
+# IntelliJ IDEA Project Folder
+/.idea
+.idea
